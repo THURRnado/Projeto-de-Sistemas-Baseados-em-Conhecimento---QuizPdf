@@ -1,0 +1,32 @@
+{% extends "global/base_index.html" %}
+
+{% load static %}
+
+{% block title %}Lista de Questões{% endblock title %}
+
+{% block links %}
+
+    <link rel="stylesheet" href="{% static 'inicio/css/listaQuestoes.css' %}">
+
+{% endblock links %}
+
+{% block body %}
+
+
+    <div class="container mt-5">
+        <h1>Lista de Questões</h1>
+        <a href="{% url 'formQuestao' %}" class="btn btn-default mb-3">+ novo</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td colspan="2 text-center">Nenhuma questão encontrada</td>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock body %}

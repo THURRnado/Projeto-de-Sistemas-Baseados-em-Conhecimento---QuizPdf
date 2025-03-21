@@ -1,0 +1,62 @@
+# Ambientes virtuais
+venv/
+.env
+*.venv
+*.env
+
+# Banco de dados SQLite
+db.sqlite3
+*.sqlite3
+
+# Cache e arquivos compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs e arquivos temporários
+logs/
+*.log
+*.pid
+*.seed
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Arquivos de configurações e credenciais
+config.json
+config.yaml
+secrets.json
+
+# Migrations antigas (opcional)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Arquivos de mídia e estáticos coletados
+media/
+staticfiles/
+static/
+global_statics/
+
+# Arquivos do VSCode e PyCharm (caso use)
+.vscode/
+.idea/
+
+# Dependências do sistema (evitar conflitos)
+*.DS_Store
+Thumbs.db
+node_modules/
+
+# Arquivos de deployment
+*.pem
+*.crt
+*.key
+
+# Arquivos do Gunicorn e Nginx (se estiver usando)
+gunicorn.log
+nginx.conf
+
+# Arquivos de dump de banco de dados
+*.sql
+*.dump

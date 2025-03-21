@@ -1,0 +1,33 @@
+{% extends "global/base_index.html" %}
+
+{% load static %}
+
+{% block title %}Registrar Questão{% endblock title %}
+
+{% block links %}
+
+    <link rel="stylesheet" href="{% static 'inicio/css/inicio.css' %}">
+
+{% endblock links %}
+
+{% block body %}
+
+    <div class="container mt-5">
+        <h1>Registrar Questão</h1>
+        <form method="post" action="{% url 'question_generator' %}" enctype="multipart/form-data" class="container mt-5">
+            {% csrf_token %}
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" class="form-control" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="arquivo" class="form-label">Arquivo PDF:</label>
+            <input type="file" id="arquivo" name="arquivo" class="form-control" accept=".pdf" required>
+        </div>
+        
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+{% endblock body %}

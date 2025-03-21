@@ -1,0 +1,31 @@
+{% extends "global/base_index.html" %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock title %}
+
+{% block links %}
+
+    <link rel="stylesheet" href="{% static 'inicio/css/inicio.css' %}">
+
+{% endblock links %}
+
+{% block body %}
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Sobre o QuizPdf</h1>
+                        <p class="mt-4 fs-5">O QuizPdf permite que você carregue um arquivo PDF. O sistema irá ler o conteúdo desse PDF e armazená-lo.</p>
+                        <p class="fs-5">Depois, ele usará esse conteúdo para criar perguntas e alternativas para você responder. Assim, você pode estudar de forma interativa e verificar seu desempenho.</p>
+                        <img src="{% static 'inicio/img/background-QuizPdf.jpeg' %}" alt="QuizPdf" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
