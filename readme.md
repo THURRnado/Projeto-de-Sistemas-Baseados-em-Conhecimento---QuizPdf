@@ -1,4 +1,4 @@
-# Nome do Projeto
+# QuizPdf
 
 O **QuizPdf** é uma aplicação que permite ao usuário carregar um arquivo PDF e, em seguida, gera questões relacionadas ao conteúdo desse PDF para serem respondidas. Este projeto está em desenvolvimento para servir como projeto final da disciplina de **Sistemas Baseados em Conhecimento** da **UFPB**.
 
