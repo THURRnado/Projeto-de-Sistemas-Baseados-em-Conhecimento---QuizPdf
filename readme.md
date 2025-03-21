@@ -26,6 +26,12 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
+3. **Colete os arquivos estáticos** com o comando:
+
+```bash
+python manage.py collectstatic
+```
+
 ## Uso
 
 Para iniciar o servidor e utilizar a aplicação, execute o seguinte comando:
